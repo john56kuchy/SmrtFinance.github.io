@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Finane | Download</title>
+    <link rel="icon" type="image/png" href="assets/images/logo_two.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(229, 229, 229);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .back-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .app-header {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .app-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-developer {
+            color: #01875f;
+            margin-bottom: 1rem;
+        }
+
+        .app-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 1rem 0;
+        }
+
+        .screenshot {
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            margin: 2rem 0;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        /* Install Button */
+        .install-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            padding: 1rem;
+        }
+
+        .install-button {
+            background-color: #01875f;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            width: 100%;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .install-button:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .app-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .install-container {
+                position: static;
+                box-shadow: none;
+                background: transparent;
+                padding: 0;
+                margin-top: 2rem;
+            }
+
+            .install-button {
+                width: auto;
+                padding: 1rem 3rem;
+            }
+
+            .screenshots {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .app-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .app-title {
+                font-size: 1.5rem;
+            }
+
+            .screenshot {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="back-button">
+                <span class="material-icons">arrow_back</span>
+                <span>Back</span>
+            </div>
+            <div class="icons-container">
+                <span class="material-icons">share</span>
+                <span class="material-icons">more_vert</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="app-header">
+            <img src="assets/images/logo@icon4x.png" alt="App Icon" class="app-icon">
+            <div class="app-info">
+                <h1 class="app-title">Smart Finance</h1>
+                <p class="app-developer">John K. Francis - Firehouse</p>
+                <div class="app-stats">
+                    <span>4.5 ★</span>
+                    <span>900+ Downloads</span>
+                    <span>Rated for 4+</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="screenshots">
+            <img src="assets/images/phone mockup.png" class="screenshot">
+            <img src="assets/images/Loan tracker intent.png" class="screenshot">
+            <img src="assets/images/pension planning intent.png" class="screenshot">
+            <img src="assets/images/insurance need intent.png" class="screenshot">
+        </div>
+
+        <div class="description">
+            <h2>About this app</h2>
+            <p>Manage loans, plan for retirement, calculate insurance needs, and explore investments—all in one app! Smart Finance simplifies financial planning with expert-backed insights and an intuitive interface. Take control of your finances today!</p>
+        </div>
+
+        <div class="additional-info">
+            <h3>Additional Information</h3>
+            <div class="info-item">
+                <span>Updated</span>
+                <span>August 2023</span>
+            </div>
+            <div class="info-item">
+                <span>Size</span>
+                <span>22MB</span>
+            </div>
+            <div class="info-item">
+                <span>Version</span>
+                <span>0.0.1</span>
+            </div>
+        </div>
+    </main>
+
+    <div class="install-container">
+        
+        <button class="install-button" id="installBtn"><a href="assets/app/Smart Finance.apk" download>Install</a></button>
+    </div>
+
+</body>
+</html>
